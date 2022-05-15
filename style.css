@@ -166,7 +166,7 @@ a:hover {
 } 
 .audio {
     position: absolute;
-    bottom: 5;
+    bottom: 1%;
     left: 50%;
     transform:translateX(-50%);
 }
