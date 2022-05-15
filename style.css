@@ -169,10 +169,6 @@ a:hover {
     bottom: 5;
     left: 50%;
     transform:translateX(-50%);
-    border-radius: 10px;
-    width: 4%;
-    min-width: 70px;
-    background-color: black;
 }
 .error {
     position: absolute;
