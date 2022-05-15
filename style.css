@@ -1,0 +1,194 @@
+@keyframes text-shadow {
+    0% {  
+        transform: translateY(0);
+        text-shadow: 
+            0 0 0 #0c2ffb, 
+            0 0 0 #2cfcfd, 
+            0 0 0 #fb203b, 
+            0 0 0 #fefc4b;
+    }
+
+    20% {  
+        transform: translateY(-1em);
+        text-shadow: 
+            0 0.125em 0 #0c2ffb, 
+            0 0.25em 0 #2cfcfd, 
+            0 -0.125em 0 #fb203b, 
+            0 -0.25em 0 #fefc4b;
+    }
+
+    40% {  
+        transform: translateY(0.5em);
+        text-shadow: 
+            0 -0.0625em 0 #0c2ffb, 
+            0 -0.125em 0 #2cfcfd, 
+            0 0.0625em 0 #fb203b, 
+            0 0.125em 0 #fefc4b;
+    }
+    
+   60% {
+        transform: translateY(-0.25em);
+        text-shadow: 
+            0 0.03125em 0 #0c2ffb, 
+            0 0.0625em 0 #2cfcfd, 
+            0 -0.03125em 0 #fb203b, 
+            0 -0.0625em 0 #fefc4b;
+    }
+
+    80% {  
+        transform: translateY(0);
+        text-shadow: 
+            0 0 0 #0c2ffb, 
+            0 0 0 #2cfcfd, 
+            0 0 0 #fb203b, 
+            0 0 0 #fefc4b;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none !important;
+      transition: none !important;
+    }
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+
+
+
+body, html {
+    height: 100%;
+    font: 16px/1.25 'Asap', sans-serif;
+    text-align: center;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: hidden;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 25em;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1em;
+    width: 100%;
+}
+
+h1 {
+    animation: text-shadow 1.5s ease-in-out infinite;
+    font-size: 5em;
+    font-weight: 900;
+    line-height: 1;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+a {
+    color: #024794;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+.sidebar {
+    height: 100%;
+    width: 150px;   
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    left: -60;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+}
+.sidebar:hover {
+    width: 200px;
+    left: 0
+} 
+.sidebar div {
+    opacity:0;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    display: block;
+    transition: all 0.4s ease-in-out;
+}
+.sidebar:hover div {
+    opacity: 1;
+} 
+.sidebar div:hover {
+    cursor: pointer;
+    color: rgb(0, 84, 193);
+    padding: 20px;
+    font-size: 22px;
+    display: block;
+}
+.sidebar2 {
+    height: 100%;
+    width: 150px;
+    padding-top: 8em;
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    right: -60;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+}
+.sidebar2:hover {
+    width: 200px;
+    right: 0;
+} 
+.sidebar2 div {
+    opacity:0;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    display: block;
+    transition: all 0.4s ease-in-out;
+}
+.sidebar2:hover div {
+    opacity: 1;
+} 
+.audio {
+    position: absolute;
+    bottom: 5;
+    left: 50%;
+    transform:translateX(-50%);
+    border-radius: 10px;
+    width: 4%;
+    min-width: 70px;
+    background-color: black;
+}
+.error {
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%);
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    opacity: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.image {
+    width: 80%;
+    border-radius: 15px;
+}
