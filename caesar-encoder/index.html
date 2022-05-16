@@ -1,18 +1,19 @@
 <html>
     <head>
-        <title>mossad's place</title>
-        <link rel="icon" type="image/png" href="./logo.jpg">
+        <title>mossad's caesar encoder</title>
+        <link rel="icon" type="image/png" href="../logo.jpg">
         <link rel="stylesheet" type="text/css" href="./style.css">
     </head>
     <body>
-        <p class="error" id="error"> Music autoplay seems to be disabled. You can start the music by clicking the button at the bottom of the page </p>
-        <div id="wrapper">
-            <div id="container">
-                <h1>m0ssad</h1>
-            </div>
+        <h1>m0ssad's caesar encoder <br> Paste you text in the text area, choose your shift and press the button to encode.</h1>
+        <div class="encoder-wrapper">
+            <textarea id="textToEncode" placeholder="Text to encode..."></textarea>
+            <br><br>
+            <button onclick="encodeText()">Encode</button>
+            <input id="integer" type="number" min="1" max="26" value="1">
         </div>
         <div class="sidebar">
-            <div><img class="image" src="./logo.jpg"></div>
+            <div><img class="image" src="../logo.jpg"></div>
             <div></div>
             <div></div>
             <div onclick="window.open('https://discordapp.com/users/254689803822563348')">discord</div>
@@ -25,14 +26,6 @@
         <div class="sidebar2">
             <div>Hello,<br><br> am 13yo kid from france.<br><br> i do cybersecurity and programming<br><br> am not front end developer sorry for bad site<br><br> pliz check out my gitbub and come tak to me on discord</div>
         </div>
-        <audio id="audio" class="audio" controls autoplay loop>
-            <source src="music.mp3" type="audio/mp3">
-            Music is not supported on this browser.
-          </audio>
-          <script>
-              document.getElementById("audio").play().catch(err => {
-                document.getElementById("error").style.opacity = 1
-              })
-          </script>
+        <script src="script.js"></script>
     </body>
 </html>

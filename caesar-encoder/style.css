@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+
+
+body, html {
+    height: 100%;
+    font: 16px/1.25 'Asap', sans-serif;
+    text-align: center;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: hidden;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+.sidebar {
+    height: 100%;
+    width: 150px;   
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    left: -60;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+}
+.sidebar:hover {
+    width: 200px;
+    left: 0
+} 
+.sidebar div {
+    opacity:0;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    display: block;
+    transition: all 0.4s ease-in-out;
+}
+.sidebar:hover div {
+    opacity: 1;
+} 
+.sidebar div:hover {
+    cursor: pointer;
+    color: rgb(0, 84, 193);
+    padding: 20px;
+    font-size: 22px;
+    display: block;
+}
+.sidebar2 {
+    height: 100%;
+    width: 150px;
+    padding-top: 8em;
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    right: -60;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+}
+.sidebar2:hover {
+    width: 200px;
+    right: 0;
+} 
+.sidebar2 div {
+    opacity:0;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    display: block;
+    transition: all 0.4s ease-in-out;
+}
+.sidebar2:hover div {
+    opacity: 1;
+} 
+.image {
+    width: 80%;
+    border-radius: 15px;
+}
+.encoder-wrapper {
+    padding-top: 8em;
+    width: 100%;
+    height: 100%;
+}
+.encoder-wrapper button {
+    display: inline-block;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 4px;
+    font-size: 13px;
+    height: 30px;
+    background-color: #0000000d;
+    color: #0e0e10;
+    padding: 0 20px;
+}
+.encoder-wrapper button:hover {
+    background-color: #0000001a;
+}
+.encoder-wrapper input {
+    text-align: center;
+    display: inline-block;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 4px;
+    font-size: 13px;
+    height: 30px;
+    max-width: 6%;
+    background-color: #0000000d;
+    color: #0e0e10;
+    padding: 0 20px;
+}
+.encoder-wrapper input:hover {
+    background-color: #0000001a;
+}
+textarea {
+    width: 50%;
+    height: 200px;
+    min-width: 25%;
+    min-height: 50px;
+    resize: none;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8; 
+}
+span{
+    position: relative;
+    display: inline-flex;
+    width: 180px;
+    height: 55px;
+    margin: 0 15px;
+    perspective: 1000px;
+  }
+  span a{
+    font-size: 19px;
+    letter-spacing: 1px;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform .25s;
+    font-family: 'Montserrat', sans-serif;
+    
+  }
+  span a:before,
+  span a:after{
+    position: absolute;
+    content: "Encode!";
+    height: 55px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  span a:before{
+    color: #fff;
+    background: #000;
+    transform: rotateY(0deg) translateZ(25px);
+  }
+  span a:after{
+    color: #000;
+    transform: rotateX(90deg) translateZ(25px);
+  }
+  span a:hover{
+    transform: translateZ(-25px) rotateX(-90deg);
+  }
