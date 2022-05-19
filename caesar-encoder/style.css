@@ -71,6 +71,11 @@ body::-webkit-scrollbar {
 .image {
     width: 80%;
     border-radius: 15px;
+    transition: all .2s ease-in-out;
+}
+.image:hover {
+    border-radius: 5px;
+    filter: drop-shadow(0 0 0.75rem rgb(255, 255, 255));
 }
 .encoder-wrapper {
     padding-top: 8em;
@@ -165,3 +170,4 @@ span{
   span a:hover{
     transform: translateZ(-25px) rotateX(-90deg);
   }
+  
