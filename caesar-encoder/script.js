@@ -17,6 +17,11 @@ function encodeText()
         return setTimeout(function(){textArea.value = ""}, 1500)
     }
 
+    if(integer < 0)
+    {
+      integer += 26
+    }
+
     for (var i = 0; i < text.length; i++) {
         var character = text[i];
         if (character.match(/[a-z]/i)) {
